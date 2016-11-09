@@ -1,0 +1,24 @@
+域名缩短只选：缩短王（www.reg.wang）
+
+后台目录：cloud/index.php
+安装目录：install/index.php
+图片目录：yunteng_cc_boke/*.jpg\*.png
+样式目录：yunteng_cc_boke/*.css
+模版目录：yunteng_cc_templets/default
+
+v3.1.0.1 更新日志：
+1.增加列表页二级栏目显示
+2.优化前端部分响应式效果
+3.优化后台部分页面文本框
+4.强悍精简安装数据库文件
+
+本程序可在 腾讯云论坛、站长源码、A5源码 共享下载。
+其他下载站未授权，如出现任何问题概不负责！
+
+腾讯云论坛：http://bbs.qcloud.com（论坛免费解答小白问题）
+
+站长源码：http://down.chinaz.com（感谢提供下载平台）
+
+A5源码：http://down.admin5.com（感谢提供下载平台）
+
+精简源码作者QQ：503827438　　　QQ群：91695509（推荐加群）

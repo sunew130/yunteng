@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>{dede:field name='typename'/} - µÚ{dede:pagelist listsize='0' listitem='pageno' function='html2text(@me)'/}Ò³ - {dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_basehost/}/yunteng_cc_boke/www.haiyoushei.net.style.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_basehost/}/yunteng_cc_boke/www.haiyoushei.net.index.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_basehost/}/yunteng_cc_boke/www.haiyoushei.net.cloudcms.css" rel="stylesheet" type="text/css">
+{dede:include filename="top.htm"/}
+<div id="box">
+	<div id="box_main">
+    	<div id="box_left">
+        	{dede:list pagesize='4' titlelen='180'}
+        	<div id="box_left_div">
+            	<div id="box_left_div_img">
+                	<a href="[field:arcurl/]"><img src="[field:litpic/]"></a>
+                </div>
+                <div id="box_left_div_info">
+                	<h2><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h2>
+                    <ul>
+                    	<i><a href="[field:typeurl/]">[field:typename/]</a></i>
+                        <i><a>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</a></i>
+                        <i><a>×÷Õß£º[field:writer/]</a></i>
+                    </ul>
+                    <ul>
+                    	<li><a>[field:description/]</a></li>
+                    </ul>
+                </div>
+            </div>
+            {/dede:list}
+        	<div id="box_left_paging">
+            	<ul>
+                    {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="3"/}
+                </ul>
+            </div>
+        </div>
+        <div id="box_right">
+			<div id="box_right_div">
+            	<h2><strong id="box_right_div_h2_strong_list"><a>{dede:field name='typename'/}</a></strong></h2>
+                <ul id="box_right_div_list_nav">
+                	{dede:channel type='son'}
+                    <li><a href='[field:typelink/]'>[field:typename/]</a></li>
+                    {/dede:channel}
+                </ul>
+            </div>
+        	{dede:include filename="right.htm"/}
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}
