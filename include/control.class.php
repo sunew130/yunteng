@@ -4,6 +4,7 @@ require_once(DEDEINC."/dedetemplate.class.php");
 
 class Control
 {
+    var $qwl;
     var $tpl;
     var $dsql;
     var $style='default';
